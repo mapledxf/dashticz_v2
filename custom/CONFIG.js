@@ -1,38 +1,13 @@
 var config = {}
+config['language'] = 'zh_CN'; //or: en_US, de_DE, fr_FR, hu_HU, it_IT, pt_PT, sv_SE
 config['domoticz_ip'] = 'http://192.168.31.128';
 config['app_title'] = 'iHome';
 config['domoticz_refresh'] = '5';
 config['dashticz_refresh'] = '60';
 config['last_update'] = 0;
-config['wu_api'] = '55ec73329ac0cc53';
-config['wu_city'] = 'Eindhoven';
-config['wu_name'] = '';
-config['wu_country'] = 'NL';
 config['use_favorites'] = 0;
-
-var trashnames = {}
-trashnames['Gft'] = 'GFT';
-trashnames['Pmd'] = 'Plastic';
-trashnames['Rest'] = ''; //LEAVE EMPTY IF YOU WANT TO HIDE IT
-
-var publictransport = {}
-publictransport.ovinfobus = { show_via: false, station: 'son-en-breugel/bushalte-penseelkever', provider: '9292-bus', icon: 'bus', width:5, results: 6 }
-
-var tvguide = {}
-tvguide.dutch = { key:'dutch', icon: 'fa-television', width:7, channels: [1,3,4,31,46,92], maxitems: 5 }
-
-var _STREAMPLAYER_TRACKS  	= [
-	{"track":1,"name":"Q-music","file":"http://icecast-qmusic.cdp.triple-it.nl/Qmusic_nl_live_96.mp3"},
-	{"track":2,"name":"538 Hitzone","file":"http://vip-icecast.538.lw.triple-it.nl/WEB11_MP3"},
-	{"track":3,"name":"Slam! NonStop","file":"http://stream.radiocorp.nl/web10_mp3"},
-	{"track":4,"name":"100%NL","file":"http://stream.100p.nl/100pctnl.mp3"},
-  ]; 
-
-
-var buttons = {}
-buttons.nunl = {key: 'nunl',  width:12, icon: 'fa-newspaper-o', title: 'Nu.nl', newwindow:true, url: 'http://www.nu.nl'}
-buttons.nos = {key: 'nos',  width:12, icon: 'fa-newspaper-o', title: 'Nos', url: 'http://www.nos.nl'}
-
+config['standby_after']	= 0;
+config['hide_topbar'] = 1;
 
 var blocks = {}
 blocks[1] = {}
@@ -48,6 +23,7 @@ blocks[4]['switch'] = true;
 blocks[3] = {}
 blocks[3]['width'] = 4;
 blocks[3]['title'] = '风速';
+
 
 blocks[5] = {}
 blocks[5]['width'] = 4;
@@ -73,19 +49,38 @@ columns[1]['blocks'] = ['blocktitle_1',1,4,3,'5_2','blocktitle_2'];
 columns[1]['width'] = 5;
 
 columns[2] = {}
-columns[2]['blocks'] = ['clock',tvguide.dutch,publictransport.ovinfobus]
+columns[2]['blocks'] = ['clock']
 columns[2]['width'] = 5; 
 
 columns[3] = {}
-columns[3]['blocks'] = ['sunrise','streamplayer',buttons.nunl,buttons.nos]
+columns[3]['blocks'] = ['sunrise']
 columns[3]['width'] = 2; 
 
 var columns_standby = {}
 columns_standby[1] = {}
-columns_standby[1]['blocks'] = ['clock','weather']
+columns_standby[1]['blocks'] = ['clock']
 columns_standby[1]['width'] = 12;
 
 var screens = {}
-screens[1] = {}
-screens[1]['background'] = 'bg8.jpg';
-screens[1]['columns'] = [1,2,3]
+screens['default'] = {}
+screens['default']['maxwidth'] = 1920;
+screens['default']['maxheight'] = 1080;
+
+screens['default'][1] = {}
+screens['default'][1]['background'] = 'bg8.jpg';
+screens['default'][1]['columns'] = [1,2,3]
+
+
+
+columns[101] = {}
+columns[101]['blocks'] = ['clock', 1,4,3,'5_2'];
+screens['tablet'] = {}
+screens['tablet']['maxwidth'] = 1024;
+screens['tablet']['maxheight'] = 768;
+screens['tablet'][1] = {}
+screens['tablet'][1]['background'] = 'bg9.jpg';
+screens['tablet'][1]['columns'] = [101]
+
+//screens[1] = {}
+//screens[1]['background'] = 'bg8.jpg';
+//screens[1]['columns'] = [1,2,3]

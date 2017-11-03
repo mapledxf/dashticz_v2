@@ -387,12 +387,14 @@ function getStatusBlock(device,block,c){
 			value = device['Speed']+' m/s, '; 
 		}
 		value+=device['Direction']+'&deg ';
+		/*
 		if (settings['translate_windspeed']==true){
 			value+=TranslateDirection(device['DirectionStr'])
 		} else {
 			value+=device['DirectionStr'];
 		}
 		//end alteration
+		*/
 	}
 	
 	//triggerChange(device['idx'],device['LastUpdate']);
