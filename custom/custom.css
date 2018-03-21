@@ -1,7 +1,6 @@
 .transbg.col-xs-1,
 .transbg.col-xs-2,
 .transbg.col-xs-3,
-.transbg.col-xs-4,
 .transbg.col-xs-5,
 .transbg.col-xs-6,
 .transbg.col-xs-7,
@@ -19,9 +18,24 @@
         border-radius: 20px;                            /* Rounded corners */
 }
 
+.transbg.col-xs-4 {
+        height: 100px;
+        padding-top:15px;
+        padding-bottom:15px;
+        border: 5px solid rgba(255,255,255,0);
+        background: rgba(0,0,0,0.2);
+        background-clip: padding-box;
+        border-radius: 20px;                            /* Rounded corners */
+}
+
+.col-data {
+    margin-left:40px;
+    font-size:15px;
+}
+
 /* block title*/
 .title {
-    font-size:15px;
+    font-size:20px;
 }
 
 /* header block*/
@@ -38,7 +52,7 @@ div.sortable.colbar {
 
 /* icon */
 .fa,.wi {
-   font-size:30px !important;
+   font-size:40px !important;
 }
 
 /*

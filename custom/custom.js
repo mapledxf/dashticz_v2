@@ -65,7 +65,7 @@ function getBlock_1(device,idx){
 
 	html+=getMyIcon('FOG',color);
 	html+='<div class="temp">';
-  	html+='<strong style="font-size:20px;color:'+color+'" class="title">'+ device['Data'] +'</strong><br />';
+  	html+='<strong style="font-size:30px;color:'+color+'" class="title">'+ device['Data'] +'</strong><br />';
  	html+='</div>';
 
 	return html;
@@ -85,11 +85,11 @@ function getBlock_9(device,idx){
 
         var html = '';
 
-        html+='<div class="day"> 室外PM2.5 </div>';
+        html+='<div class="day"> 室内PM2.5 </div>';
 
         html+=getMyIcon('FOG',color);
         html+='<div class="temp">';
-        html+='<strong style="font-size:20px;color:'+color+'" class="title">'+ device['Data'] +'</strong><br />';
+        html+='<strong style="font-size:30px;color:'+color+'" class="title">'+ device['Data'] +'</strong><br />';
         html+='</div>';
 
         return html;
@@ -114,7 +114,7 @@ function getBlock_4(device,idx){
 	html+=getMyIcon(weather, 'white');
 
 	html+='<div class="temp">';
-	html+='<strong style="font-size:20px;color:white" class="title">' + temp + '</strong><br />';
+	html+='<strong style="font-size:30px;color:white" class="title">' + temp + '</strong><br />';
 	html+='</div>';
 	return html;
 }
