@@ -1,6 +1,6 @@
 var config = {}
 config['language'] = 'zh_CN'; //or: en_US, de_DE, fr_FR, hu_HU, it_IT, pt_PT, sv_SE
-config['domoticz_ip'] = 'http://192.168.31.128';
+config['domoticz_ip'] = 'http://192.168.2.2:8080';
 config['app_title'] = 'iHome';
 config['domoticz_refresh'] = '5';
 config['dashticz_refresh'] = '60';
@@ -24,10 +24,29 @@ blocks[3] = {}
 blocks[3]['width'] = 4;
 blocks[3]['title'] = '风速';
 
-
 blocks[5] = {}
 blocks[5]['width'] = 4;
 blocks[5]['title'] = '湿度';
+
+blocks[8] = {}
+blocks[8]['width'] = 4;
+blocks[8]['title'] = '卧室灯';
+blocks[8]['switch'] = true;
+
+blocks[9] = {}
+blocks[9]['width'] = 4;
+blocks[9]['title'] = 'PM2.5';
+blocks[9]['switch'] = true;
+
+blocks[10] = {}
+blocks[10]['width'] = 4;
+blocks[10]['title'] = '空气净化器';
+blocks[10]['switch'] = true;
+
+blocks[11] = {}
+blocks[11]['width'] = 4;
+blocks[11]['title'] = '湿度';
+blocks[11]['switch'] = true;
 
 blocks['blocktitle_1'] = {}
 blocks['blocktitle_1']['key'] = 'blocktitle_1';
@@ -45,7 +64,7 @@ columns['bar']['blocks'] = ['logo','miniclock','settings']
 					
 columns[1] = {}
 //columns[1]['blocks'] = ['currentweather_big','weather',1]
-columns[1]['blocks'] = ['blocktitle_1',1,4,3,'5_2','blocktitle_2'];
+columns[1]['blocks'] = ['blocktitle_1',1,4,3,'5_2','blocktitle_2',9,'11_2',10,8];
 columns[1]['width'] = 5;
 
 columns[2] = {}

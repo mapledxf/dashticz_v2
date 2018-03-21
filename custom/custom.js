@@ -71,6 +71,30 @@ function getBlock_1(device,idx){
 	return html;
 }
 
+function getBlock_9(device,idx){
+   //   $('.block_'+idx);
+        $('div.block_9').addClass('myweather');
+        enableClick(9,9);
+
+        var pm25 = parseInt(device['Data']);
+        var g = Math.round(255 - ((pm25-20)/2));
+        var color = '';
+        if(g>255) color = 'rgb(255,255,255)';
+        else if(g<0) color = 'rgb(170,0,0)';
+        else color = 'rgb(255,'+g+',0)';
+
+        var html = '';
+
+        html+='<div class="day"> 室外PM2.5 </div>';
+
+        html+=getMyIcon('FOG',color);
+        html+='<div class="temp">';
+        html+='<strong style="font-size:20px;color:'+color+'" class="title">'+ device['Data'] +'</strong><br />';
+        html+='</div>';
+
+        return html;
+}
+
 function getBlock_4(device,idx){
 	$('div.block_4').addClass('myweather');
 	enableClick(4,2);
