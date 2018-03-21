@@ -21,10 +21,7 @@ Visit the wikipage at: http://www.domoticz.com/wiki/Dashticz_V2
 
 
 # Donate
-
-If you like my work, you can buy me a beer at: 
-
-https://www.paypal.me/robgeerts
+Do you appreciate my work and want to buy me a beer? You can send Bitcoins to <b>17Qy4bsLM9J238fCZt5kaRc2bD5S1Aw6og</b> or donate via PayPal: https://www.paypal.me/robgeerts
 
 
 
