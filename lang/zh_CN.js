@@ -39,22 +39,22 @@ lang['temp_toon'] = 'Living room';
 
 // Wind
 lang['wind'] = 'Wind';
-lang['direction_N'] = 'north';
-lang['direction_NNE'] = 'north-northeast';
-lang['direction_NE'] = 'northeast';
-lang['direction_ENE'] = 'east-northeast';
-lang['direction_E'] = 'east';
-lang['direction_ESE'] = 'east-southeast';
-lang['direction_SE'] = 'southeast';
-lang['direction_SSE'] = 'south-southeast';
-lang['direction_S'] = 'south';
-lang['direction_SSW'] = 'south-southwest';
-lang['direction_SW'] = 'south-west';
-lang['direction_WSW'] = 'west-southwest';
-lang['direction_W'] = 'west';
-lang['direction_WNW'] = 'west-northwest';
-lang['direction_NW'] = 'northwest';
-lang['direction_NNW'] = 'north-northwest';
+lang['direction_N'] = '北风';
+lang['direction_NNE'] = '偏北东北风';
+lang['direction_NE'] = '东北风';
+lang['direction_ENE'] = '偏东东北风';
+lang['direction_E'] = '东风';
+lang['direction_ESE'] = '偏东东南风';
+lang['direction_SE'] = '东南风';
+lang['direction_SSE'] = '偏南东南风';
+lang['direction_S'] = '南风';
+lang['direction_SSW'] = '偏南西南风';
+lang['direction_SW'] = '西南风';
+lang['direction_WSW'] = '偏西西南风';
+lang['direction_W'] = '西风';
+lang['direction_WNW'] = '偏西西北风';
+lang['direction_NW'] = '西北风';
+lang['direction_NNW'] = '偏北西北风';
 
 // Misc
 lang['last_update'] = '最后更新';
