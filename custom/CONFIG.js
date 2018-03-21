@@ -25,6 +25,8 @@ blocks[3] = {}
 blocks[3]['width'] = 4;
 blocks[3]['title'] = '';
 blocks[3]['hide_data'] = true;
+blocks[3]['icon'] = 'fa-arrow-down';
+
 //温度
 blocks[4] = {}
 blocks[4]['width'] = 4;
@@ -35,13 +37,12 @@ blocks[4]['switch'] = true;
 blocks[5] = {}
 blocks[5]['width'] = 4;
 blocks[5]['title'] = '湿度';
-
+blocks[5]['icon'] = 'fa-arrow-down';
 
 /*Dummy Device*/
 blocks[8] = {}
 blocks[8]['width'] = 4;
 blocks[8]['switch'] = true;
-
 
 /*小米净化器插件*/
 //pm2.5
@@ -55,6 +56,7 @@ blocks[10] = {}
 blocks[10]['width'] = 4;
 blocks[10]['title'] = '空气净化器';
 blocks[10]['switch'] = true;
+blocks[10]['icon'] = 'fa-soundcloud';
 
 //湿度
 blocks[11] = {}
@@ -110,7 +112,7 @@ screens['tablet'] = {}
 screens['tablet']['maxwidth'] = 1024;
 screens['tablet']['maxheight'] = 768;
 screens['tablet'][1] = {}
-screens['tablet'][1]['background'] = 'bg9.jpg';
+screens['tablet'][1]['background'] = 'bg8.jpg';
 screens['tablet'][1]['columns'] = [101]
 
 
