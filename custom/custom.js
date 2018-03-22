@@ -118,4 +118,3 @@ function getBlock_4(device,idx){
 	html+='</div>';
 	return html;
 }
-

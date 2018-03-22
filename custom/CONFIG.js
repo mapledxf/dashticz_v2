@@ -60,25 +60,25 @@ blocks[10]['icon'] = 'fa-soundcloud';
 //湿度
 blocks[11] = {}
 blocks[11]['width'] = 2;
-blocks[11]['title'] = '湿度';
 blocks[11]['switch'] = true;
 
 
 //火焰报警
-blocks[13] = {}
-blocks[13]['width'] = 2;
-blocks[13]['icon'] = 'fa-fire'
-blocks[13]['hide_data'] = true;
+blocks[17] = {}
+blocks[17]['width'] = 2;
+blocks[17]['icon'] = 'fa-fire'
+blocks[17]['hide_data'] = true;
 
 blocks[14] = {}
 blocks[14]['width'] = 2;
-blocks[14]['title'] = '1';
 
 blocks[15] = {}
 blocks[15]['width'] = 2;
 
+//煤气报警
 blocks[16] = {}
 blocks[16]['width'] = 2;
+blocks[16]['hide_data'] = true;
 
 blocks['blocktitle_1'] = {}
 blocks['blocktitle_1']['key'] = 'blocktitle_1';
@@ -122,7 +122,7 @@ screens['default']['maxheight'] = 1080;
 //screens['default'][1]['columns'] = [1,2,3]
 
 columns[101] = {}
-columns[101]['blocks'] = ['clock', 1,4,3,'5_2','blocktitle_2',9,'11_2',10,8,13,'14_1','14_2',16];
+columns[101]['blocks'] = ['clock', 1,4,3,'5_2','blocktitle_2',9,'14_1','11_2',10,8,17,'14_2',16];
 screens['tablet'] = {}
 screens['tablet']['maxwidth'] = 1024;
 screens['tablet']['maxheight'] = 768;
