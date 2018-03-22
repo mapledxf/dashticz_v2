@@ -16,54 +16,69 @@ var blocks = {}
 
 //pm2.5
 blocks[1] = {}
-blocks[1]['width'] = 4;
+blocks[1]['width'] = 2;
 blocks[1]['title'] = 'PM2.5';
 blocks[1]['switch'] = true;
 
 //风速
 blocks[3] = {}
-blocks[3]['width'] = 4;
+blocks[3]['width'] = 3;
 blocks[3]['title'] = '';
 blocks[3]['hide_data'] = true;
 blocks[3]['icon'] = 'fa-arrow-down';
-
 //温度
 blocks[4] = {}
-blocks[4]['width'] = 4;
+blocks[4]['width'] = 2;
 blocks[4]['title'] = '温度';
 blocks[4]['switch'] = true;
 
 //湿度
 blocks[5] = {}
-blocks[5]['width'] = 4;
+blocks[5]['width'] = 2;
 blocks[5]['title'] = '湿度';
 blocks[5]['icon'] = 'fa-arrow-down';
 
 /*Dummy Device*/
 blocks[8] = {}
-blocks[8]['width'] = 4;
+blocks[8]['width'] = 2;
 blocks[8]['switch'] = true;
 
 /*小米净化器插件*/
 //pm2.5
 blocks[9] = {}
-blocks[9]['width'] = 4;
+blocks[9]['width'] = 2;
 blocks[9]['title'] = 'PM2.5';
 blocks[9]['switch'] = true;
 
 //净化器开关
 blocks[10] = {}
-blocks[10]['width'] = 4;
+blocks[10]['width'] = 2;
 blocks[10]['title'] = '空气净化器';
 blocks[10]['switch'] = true;
 blocks[10]['icon'] = 'fa-soundcloud';
 
 //湿度
 blocks[11] = {}
-blocks[11]['width'] = 4;
+blocks[11]['width'] = 2;
 blocks[11]['title'] = '湿度';
 blocks[11]['switch'] = true;
 
+
+//火焰报警
+blocks[13] = {}
+blocks[13]['width'] = 2;
+blocks[13]['icon'] = 'fa-fire'
+blocks[13]['hide_data'] = true;
+
+blocks[14] = {}
+blocks[14]['width'] = 2;
+blocks[14]['title'] = '1';
+
+blocks[15] = {}
+blocks[15]['width'] = 2;
+
+blocks[16] = {}
+blocks[16]['width'] = 2;
 
 blocks['blocktitle_1'] = {}
 blocks['blocktitle_1']['key'] = 'blocktitle_1';
@@ -107,7 +122,7 @@ screens['default']['maxheight'] = 1080;
 //screens['default'][1]['columns'] = [1,2,3]
 
 columns[101] = {}
-columns[101]['blocks'] = ['clock', 1,4,3,'5_2','blocktitle_2',9,'11_2',10,8];
+columns[101]['blocks'] = ['clock', 1,4,3,'5_2','blocktitle_2',9,'11_2',10,8,13,'14_1','14_2',16];
 screens['tablet'] = {}
 screens['tablet']['maxwidth'] = 1024;
 screens['tablet']['maxheight'] = 768;
